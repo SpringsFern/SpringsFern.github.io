@@ -1,6 +1,6 @@
 # Environment Variables Configuration
 
-TG-FileStream uses environment variables to configure Telegram access, server behavior, performance tuning, and access control.
+tgfilestream uses environment variables to configure Telegram access, server behavior, performance tuning, and access control.
 
 All variables must be defined inside a `.env` file located in the project root directory.
 

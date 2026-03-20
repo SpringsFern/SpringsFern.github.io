@@ -1,6 +1,6 @@
 # Official Patches
 
-This page lists patches officially maintained for TG-FileStream.
+This page lists patches officially maintained for tgfilestream.
 
 Patches extend functionality without modifying core files.
 
@@ -23,6 +23,11 @@ Simple HTML5 Player
 [GitHub](https://github.com/SpringsFern/tgfs_translation)
 
 Translation of Bot Reply text to additional languages
+
+### 4. MySQL
+[GitHub](https://github.com/SpringsFern/tgfs-mysql)
+
+Use MySQL as Database instead of mongodb
 
 ## How Patches Work
 

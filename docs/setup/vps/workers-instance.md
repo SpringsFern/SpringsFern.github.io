@@ -15,7 +15,7 @@ It allows:
 
 ### Service Architecture
 
-TG-FileStream uses:
+tgfilestream uses:
 
 - `tgfs.service` → Main instance
 - `tgfs-worker@.service` → Worker instances (templated)
@@ -40,7 +40,7 @@ Paste:
 
 ```ini
 [Unit]
-Description=TG-FileStream Worker
+Description=tgfilestream Worker
 After=network.target
 Requires=tgfs.service
 
@@ -49,9 +49,9 @@ Type=simple
 User=<username>
 Group=<group>
 
-WorkingDirectory=<TG-FileStream Clone Path>
+WorkingDirectory=<tgfilestream Clone Path>
 
-ExecStart=<TG-FileStream Clone Path>/<virtual-env-dir>/bin/python -m tgfs --port %i --no-update --session %i
+ExecStart=<tgfilestream Clone Path>/<virtual-env-dir>/bin/python -m tgfs --port %i --no-update --env .env %i.env --no-main
 
 Restart=always
 RestartSec=3
@@ -69,7 +69,7 @@ WantedBy=multi-user.target
 Adjust:
 - Replace `<username>` with your system username.
 - Replace `<group>` with your group name (often same as username).
-- Replace `<TG-FileStream Clone Path>` with the absolute path to your cloned TG-FileStream directory.
+- Replace `<tgfilestream Clone Path>` with the absolute path to your cloned tgfilestream directory.
 - Replace `<virtual-env-dir>` with the name of your virtual environment directory (usually `venv`).
 
 ---
@@ -77,7 +77,7 @@ Adjust:
 ??? info "Example"
     ```ini
     [Unit]
-    Description=TG-FileStream Worker
+    Description=tgfilestream Worker
     After=network.target
     Requires=tgfs.service
 
@@ -86,9 +86,9 @@ Adjust:
     User=ubuntu
     Group=ubuntu
 
-    WorkingDirectory=/home/ubuntu/tg-filestream
+    WorkingDirectory=/home/ubuntu/tgfilestream
 
-    ExecStart=/home/ubuntu/tg-filestream/venv/bin/python -m tgfs --port %i --no-update --session %i
+    ExecStart=/home/ubuntu/tgfilestream/venv/bin/python -m tgfs --port %i --no-update --env .env %i.env --no-main
 
     Restart=always
     RestartSec=3
@@ -118,7 +118,7 @@ sudo systemctl start tgfs-worker@8081
 This runs:
 
 ```
-python -m tgfs --port 8081 --no-update --session 8081
+python -m tgfs --port 8081 --no-update --env .env 8081.env --no-main
 ```
 
 ---

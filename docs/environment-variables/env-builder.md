@@ -6,7 +6,7 @@ hide:
 
 # Interactive `.env` Builder
 
-Use this tool to generate your `.env` file for TG-FileStream.
+Use this tool to generate your `.env` file for tgfilestream.
 
 <style>
 .env-section input,
@@ -144,6 +144,7 @@ const SCHEMA = [
     group: "Bot Behavior Settings",
     fields: [
       { key: "NO_UPDATE", type: "boolean"},
+      { key: "NO_MAIN", type: "boolean"},
       { key: "SEQUENTIAL_UPDATES", type: "boolean"},
       { key: "FILE_INDEX_LIMIT", type: "number"},
       { key: "MAX_WARNS", type: "number"},
@@ -168,16 +169,11 @@ const SCHEMA = [
       {
         key: "DB_BACKEND",
         type: "choice",
-        options: ["mongodb", "mysql"],
+        options: ["mongodb"],
         default: "mongodb"
       },
-      { key: "MONGODB_URI", type: "text", showIf: { key: "DB_BACKEND", value: "mongodb" } },
-      { key: "MONGODB_DBNAME", type: "text", default: "TGFS", showIf: { key: "DB_BACKEND", value: "mongodb" } },
-      { key: "MYSQL_HOST", type: "text", showIf: { key: "DB_BACKEND", value: "mysql" } },
-      { key: "MYSQL_PORT", type: "number", default: 3306, showIf: { key: "DB_BACKEND", value: "mysql" } },
-      { key: "MYSQL_USER", type: "text", showIf: { key: "DB_BACKEND", value: "mysql" } },
-      { key: "MYSQL_PASSWORD", type: "password", showIf: { key: "DB_BACKEND", value: "mysql" } },
-      { key: "MYSQL_DB", type: "text", showIf: { key: "DB_BACKEND", value: "mysql" } }
+      { key: "MONGODB_URI", type: "text", required: true, showIf: { key: "DB_BACKEND", value: "mongodb" } },
+      { key: "MONGODB_DBNAME", type: "text", default: "TGFS", showIf: { key: "DB_BACKEND", value: "mongodb" } }
     ]
   }
 ];

@@ -1,12 +1,12 @@
 # About
 
-Welcome to the official documentation site for **TG-FileStream**.
+Welcome to the official documentation site for **tgfilestream**.
 
-TG-FileStream is an open-source project that acts as a lightweight Telegram client and HTTP proxy, allowing Telegram media files to be streamed and downloaded via direct HTTP links.
+tgfilestream is an open-source project that acts as a lightweight Telegram client and HTTP proxy, allowing Telegram media files to be streamed and downloaded via direct HTTP links.
 
 This documentation site is built to help users:
 
-- Deploy TG-FileStream on a VPS
+- Deploy tgfilestream on a VPS
 - Configure environment variables properly
 - Set up production-ready infrastructure
 - Customize the bot using patches
@@ -16,7 +16,7 @@ This documentation site is built to help users:
 
 ## About the Project
 
-TG-FileStream is developed and maintained by **Deekshith SH**.
+tgfilestream is developed and maintained by **Deekshith SH**.
 
 The project is released under the **GNU AGPL v3 license**, which means:
 
@@ -39,4 +39,4 @@ If you find something unclear or incorrect, contributions and feedback are alway
 
 ---
 
-Thank you for using TG-FileStream.
+Thank you for using tgfilestream.

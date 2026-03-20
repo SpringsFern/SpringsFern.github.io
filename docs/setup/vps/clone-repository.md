@@ -1,6 +1,6 @@
 # Clone the Repository
 
-This section explains how to download the TG-FileStream source code to your server.
+This section explains how to download the tgfilestream source code to your server.
 
 ---
 
@@ -25,7 +25,7 @@ You may also use:
 ## 2. Clone the Repository
 
 ```bash
-git clone https://github.com/SpringsFern/TG-FileStream.git
+git clone https://github.com/SpringsFern/tgfilestream.git
 ```
 
 ---
@@ -33,7 +33,7 @@ git clone https://github.com/SpringsFern/TG-FileStream.git
 ## 3. Change Directory
 
 ```bash
-cd TG-FileStream
+cd tgfilestream
 ```
 
 Verify the contents:

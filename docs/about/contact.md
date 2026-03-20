@@ -1,6 +1,6 @@
 # Contact
 
-If you have questions, suggestions, or issues related to **TG-FileStream**, you can reach out using the information below.
+If you have questions, suggestions, or issues related to **tgfilestream**, you can reach out using the information below.
 
 ---
 
@@ -15,7 +15,7 @@ If you have questions, suggestions, or issues related to **TG-FileStream**, you 
 
 For bugs, feature requests, or improvements, please use the official GitHub repository:
 
-https://github.com/SpringsFern/TG-FileStream
+https://github.com/SpringsFern/tgfilestream
 
 When reporting an issue, please include:
 

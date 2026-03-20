@@ -1,6 +1,6 @@
 # Customizing Bot Reply Text
 
-TG-FileStream uses a translation registry system to manage reply texts.
+tgfilestream uses a translation registry system to manage reply texts.
 
 All default messages are defined in:
 
@@ -80,7 +80,7 @@ This overrides the default `START_TEXT`.
 
 You can override any variable defined in:
 
-https://github.com/SpringsFern/TG-FileStream/blob/main/tgfs/utils/translation.py
+https://github.com/SpringsFern/tgfilestream/blob/main/tgfs/utils/translation.py
 
 ---
 
@@ -89,7 +89,7 @@ https://github.com/SpringsFern/TG-FileStream/blob/main/tgfs/utils/translation.py
 Clone your fork inside:
 
 ```
-<TG-FileStream base folder>/tgfs/patches/
+<tgfilestream base folder>/tgfs/patches/
 ```
 
 Example:
@@ -101,7 +101,7 @@ git clone https://github.com/<your-username>/CustomReply
 
 ---
 
-## 4. Restart TG-FileStream
+## 4. Restart tgfilestream
 
 ```bash
 sudo systemctl restart tgfs

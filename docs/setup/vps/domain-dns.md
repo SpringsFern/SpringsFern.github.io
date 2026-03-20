@@ -203,7 +203,7 @@ This ensures:
 
 ---
 
-## 6. Restart TG-FileStream
+## 6. Restart tgfilestream
 
 After updating `.env`, restart services:
 

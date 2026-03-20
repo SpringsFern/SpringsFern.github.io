@@ -1,6 +1,6 @@
 # Customization Overview
 
-TG-FileStream supports modular customization without modifying core logic.
+tgfilestream supports modular customization without modifying core logic.
 
 The project is structured to allow:
 

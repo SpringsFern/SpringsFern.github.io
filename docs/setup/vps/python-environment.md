@@ -8,7 +8,7 @@ Using a virtual environment ensures that project dependencies do not interfere w
 
 ## 1. Verify Python Version
 
-TG-FileStream requires:
+tgfilestream requires:
 
 - Python 3.10 or higher
 
@@ -87,7 +87,6 @@ Ensure required libraries such as:
 
 - aiohttp
 - telethon
-- aiomysql
 - dnspython
 - python-dotenv (if used)
 

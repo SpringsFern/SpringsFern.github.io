@@ -1,56 +1,10 @@
 # Environment Variables Configuration
 
-TG-FileStream uses environment variables to configure Telegram access, server behavior, performance tuning, and access control.
+tgfilestream uses environment variables to configure Telegram access, server behavior, performance tuning, and access control.
 
 ## 1. Core & Application Environment Variables
 
-| Variable | Required / Default | Description |
-|----------|-------------------|------------|
-| `API_ID` | ✅ | App ID from https://my.telegram.org |
-| `API_HASH` | ✅ | API hash from https://my.telegram.org |
-| `BOT_TOKEN` | ✅ | Bot token from https://t.me/BotFather |
-| `BIN_CHANNEL` | ✅ | Channel ID where files sent to the bot are stored |
-| `DB_BACKEND` | ✅ | Database backend: `mongodb` or `mysql` |
-| `HOST` | `0.0.0.0` | Host address to bind the server |
-| `PORT` | `8080` | Port to run the server |
-| `PUBLIC_URL` | `https://0.0.0.0:8080` | Public-facing URL used to generate download links |
-| `DEBUG` | `False` | Enable extra logging |
-| `CONNECTION_LIMIT` | `5` | Connections per DC for a single client |
-| `DOWNLOAD_PART_SIZE` | `1048576 (1MB)` | Bytes requested per chunk |
-| `NO_UPDATE` | `False` | Disable replying to bot messages |
-| `SEQUENTIAL_UPDATES` | `False` | Handle Telegram updates sequentially |
-| `FILE_INDEX_LIMIT` | `10` | Files shown per `/files` command |
-| `MAX_WARNS` | `3` | Maximum warns before banning a user |
-| `ADMIN_IDS` | `None` | Comma-separated admin user IDs |
-| `ALLOWED_IDS` | `None` | Comma-separated allowed user IDs |
-| `MULTI_TOKENx` | Optional | Multiple Telegram bot tokens (`MULTI_TOKEN1`, `MULTI_TOKEN2`, etc.) |
-
-### Database Configuration
-
-You must configure database variables depending on the selected `DB_BACKEND`.
-
----
-
-#### If Using MySQL
-
-| Variable | Required | Description |
-|----------|----------|------------|
-| `MYSQL_HOST` | ✅ | MySQL server hostname |
-| `MYSQL_PORT` | ✅ | MySQL server port |
-| `MYSQL_USER` | ✅ | MySQL username |
-| `MYSQL_PASSWORD` | ✅ | MySQL password |
-| `MYSQL_DB` | ✅ | Database name |
-| `MYSQL_MINSIZE` | `1` | Minimum connection pool size |
-| `MYSQL_MAXSIZE` | `5` | Maximum connection pool size |
-
----
-
-#### If Using MongoDB
-
-| Variable | Required | Description |
-|----------|----------|------------|
-| `MONGODB_URI` | ✅ | MongoDB connection URI |
-| `MONGODB_DBNAME` | `TGFS` | MongoDB database name |
+[Click Here](https://github.com/SpringsFern/tgfilestream/blob/main/README.md#%EF%B8%8F-environment-variables)
 
 ---
 

@@ -1,6 +1,6 @@
 # Setup systemd Service (Production Deployment)
 
-This section explains how to configure TG-FileStream using systemd for:
+This section explains how to configure tgfilestream using systemd for:
 
 - Automatic startup on boot
 - Automatic restart on crash
@@ -22,7 +22,7 @@ Paste the following:
 
 ```ini
 [Unit]
-Description=TG-FileStream
+Description=tgfilestream
 After=network.target
 
 [Service]
@@ -30,9 +30,9 @@ Type=simple
 User=<username>
 Group=<group>
 
-WorkingDirectory=<TG-FileStream Clone Path>
+WorkingDirectory=<tgfilestream Clone Path>
 
-ExecStart=<TG-FileStream Clone Path>/<virtual-env-dir>/bin/python -m tgfs
+ExecStart=<tgfilestream Clone Path>/<virtual-env-dir>/bin/python -m tgfs --env .env tgfilestream.env
 
 Restart=always
 RestartSec=3
@@ -51,7 +51,7 @@ Adjust:
 
 - Replace `<username>` with your system username.
 - Replace `<group>` with your group name (often same as username).
-- Replace `<TG-FileStream Clone Path>` with the absolute path to your cloned TG-FileStream directory.
+- Replace `<tgfilestream Clone Path>` with the absolute path to your cloned tgfilestream directory.
 - Replace `<virtual-env-dir>` with the name of your virtual environment directory (usually `venv`).
 
 ---
@@ -59,7 +59,7 @@ Adjust:
 ??? info "Example"
     ```ini
     [Unit]
-    Description=TG-FileStream
+    Description=tgfilestream
     After=network.target
 
     [Service]
@@ -67,9 +67,9 @@ Adjust:
     User=ubuntu
     Group=ubuntu
 
-    WorkingDirectory=/home/ubuntu/tg-filestream
+    WorkingDirectory=/home/ubuntu/tgfilestream
 
-    ExecStart=/home/ubuntu/tg-filestream/venv/bin/python -m tgfs
+    ExecStart=/home/ubuntu/tgfilestream/venv/bin/python -m tgfs  --env .env tgfilestream.env
 
     Restart=always
     RestartSec=3

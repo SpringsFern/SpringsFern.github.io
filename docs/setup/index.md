@@ -1,7 +1,5 @@
 # Setup & Deployment
 
-This section explains how to deploy **TG-FileStream (TGFS)**.
-
 TGFS is designed for self-hosted environments and can be deployed on different platforms depending on your needs.
 
 ---
@@ -35,11 +33,3 @@ Additional platform guides may be added in the future:
 - Container orchestration setups
 
 ---
-
-## Which Option Should You Choose?
-
-If you are unsure, choose:
-
-➡ **VPS Deployment**
-
-It provides the most control and best compatibility with TGFS architecture.

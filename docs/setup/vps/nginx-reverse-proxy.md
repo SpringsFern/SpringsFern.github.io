@@ -2,7 +2,7 @@
 
 In this step, we configure Nginx to:
 
-- Reverse proxy requests to TG-FileStream
+- Reverse proxy requests to tgfilestream
 - Handle HTTP traffic
 - Properly stream large files
 

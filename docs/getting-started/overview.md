@@ -1,6 +1,6 @@
 # Overview
 
-TG-FileStream (TGFS) is a Telegram-based file streaming backend.
+tgfilestream (TGFS) is a Telegram-based file streaming backend.
 
 It allows users to:
 

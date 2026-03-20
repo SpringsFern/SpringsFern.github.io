@@ -1,6 +1,6 @@
 # System Requirements
 
-Before deploying **TG-FileStream**, ensure your server meets the following requirements.
+Before deploying **tgfilestream**, ensure your server meets the following requirements.
 
 ---
 

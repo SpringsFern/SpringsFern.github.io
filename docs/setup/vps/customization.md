@@ -1,10 +1,10 @@
 # Customization & Extensibility
 
-At this point, TG-FileStream is fully deployed and running in production.
+At this point, tgfilestream is fully deployed and running in production.
 
 You may now customize behavior, extend features, or integrate additional components.
 
-TG-FileStream is designed with extensibility in mind, allowing:
+tgfilestream is designed with extensibility in mind, allowing:
 
 - Patch-based feature injection
 - Custom command handling

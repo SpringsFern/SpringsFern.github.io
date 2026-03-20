@@ -1,6 +1,6 @@
-# TG-FileStream Documentation
+# tgfilestream Documentation
 
-Welcome to the official documentation for **TG-FileStream (TGFS)**.
+Welcome to the official documentation for **tgfilestream (TGFS)**.
 
 TGFS is a lightweight Telegram client and HTTP server that acts as a proxy between Telegram servers and HTTP clients, allowing direct downloads of Telegram media files via HTTP.
 
@@ -49,4 +49,4 @@ Learn how to modify behavior without touching core code.
 ## Project Repositories
 
 - Core Project:  
-  https://github.com/SpringsFern/TG-FileStream
+  https://github.com/SpringsFern/tgfilestream
